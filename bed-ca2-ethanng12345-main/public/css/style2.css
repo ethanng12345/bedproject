@@ -1,0 +1,133 @@
+/* ------------------------------
+   Global HTML and Body Styles
+   - Set the full height of the page.
+   - Disable global scrolling to control overflow manually.
+------------------------------ */
+html, body {
+    height: 100%;
+    overflow: hidden;  /* Disable global scrolling */
+}
+  
+/* ------------------------------
+   Reviews Container Scrolling
+   - Defines a fixed height for the review list.
+   - Ensures the review list does not overflow its container.
+   - Enables vertical scrolling when content exceeds the set height.
+------------------------------ */
+#review-list {
+    height: 600px;  /* Set specific height for reviews */
+    max-height: 100%;  /* Ensure it doesn't overflow beyond its parent container */
+    overflow-y: auto;  /* Enable scroll for reviews if content exceeds */
+}
+  
+/* ------------------------------
+   Container Fluid Overflow
+   - Prevents overflow in elements with the .container-fluid class.
+------------------------------ */
+.container-fluid {
+    overflow: hidden;
+}
+
+/* ------------------------------
+   Button Icon Styling
+   - Sets the font size for icons inside back and add buttons.
+------------------------------ */
+.back-button i, .add-button i {
+    font-size: 1.2rem;
+}
+
+/* ------------------------------
+   Start Button Styling
+   - Sets fixed width, font size, text alignment, and margin for start buttons.
+------------------------------ */
+.start-button {
+    width: 120px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* ------------------------------
+   Challenge Image Placeholder
+   - Styles the placeholder for challenge images.
+   - Sets width, height, background color, border radius, and centers the content using flexbox.
+   - Defines font size and text color for any text inside the placeholder.
+------------------------------ */
+.challenge-image {
+    width: 100%;
+    height: 250px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #888;
+}
+
+/* ------------------------------
+   Reviews List Reset
+   - Removes default margin and padding from the review list for a cleaner layout.
+------------------------------ */
+#review-list {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------
+   Reviews List Item Styling
+   - Adds padding and a bottom border to each review list item.
+------------------------------ */
+#review-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ------------------------------
+   Challenge List Item Styling
+   - Styles each challenge list item with a white background, spacing, and rounded corners.
+   - Adds a subtle box shadow and pointer cursor to indicate interactivity.
+   - Includes transition effects for smooth hover animations.
+------------------------------ */
+#challenge-list li {
+    background: #ffffff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* ------------------------------
+   Challenge List Hover Effect
+   - Moves the challenge item up slightly and increases the box shadow on hover.
+------------------------------ */
+#challenge-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------
+   Left Column Spacing Adjustment
+   - Provides additional padding for left column elements to reduce empty space.
+------------------------------ */
+.col-lg-8 {
+    padding: 20px 40px; /* More padding for less empty space */
+}
+
+/* ------------------------------
+   Adjusted Challenge Image Height
+   - Overrides the previous height for the challenge image to increase its size.
+------------------------------ */
+.challenge-image {
+    height: 300px; /* Adjust height slightly */
+}
+
+/* ------------------------------
+   Paragraph Styling
+   - Adds margin to the bottom of paragraph elements for spacing.
+------------------------------ */
+p {
+    margin-bottom: 10px;
+}

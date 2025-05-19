@@ -1,0 +1,64 @@
+/* ------------------------------
+   Navbar Margin Reset
+   - Removes any default top margin from the navbar.
+------------------------------ */
+.navbar {
+  margin-top: 0; /* Remove any default margin on navbar */
+}
+
+/* ------------------------------
+ Navbar Navigation Links
+ - Sets the text color to white with a neon glow effect for all navbar items.
+------------------------------ */
+#navbarNav .nav-link {
+  color: #fff !important; /* White text for navbar items */
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Neon glow effect */
+  
+}
+
+/* ------------------------------
+ Navbar Navigation Links Hover State
+ - Changes the text color to neon red and increases the glow effect on hover.
+------------------------------ */
+#navbarNav .nav-link:hover {
+  color: #ff0044 !important; /* Neon red hover effect */
+  text-shadow: 0 0 15px rgba(255, 0, 68, 0.8); /* Stronger red glow effect on hover */
+}
+
+/* ------------------------------
+ Navbar Toggler Icon
+ - Sets the background color of the navbar toggler icon to neon green.
+------------------------------ */
+.navbar-toggler-icon {
+  background-color: #00ff99; /* Neon green toggle icon */
+}
+
+/* ------------------------------
+ Navigation Container
+ - Constrains the maximum width of the navigation container and adds a top margin.
+------------------------------ */
+.nav_container {
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+/* ------------------------------
+ Register Button
+ - Styles the register button with white text and a neon glow effect.
+ - Adjusts the bottom margin for alignment.
+------------------------------ */
+.register-btn {
+  color: #fff !important; /* White text for navbar items */
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Neon glow effect */
+  margin-bottom: -15px;
+  
+}
+
+/* ------------------------------
+ Register Button Hover State
+ - Changes the text color to neon red and intensifies the glow effect on hover.
+------------------------------ */
+.register-btn:hover {
+  color: #ff0044 !important; /* Neon red hover effect */
+  text-shadow: 0 0 15px rgba(255, 0, 68, 0.8); /* Stronger red glow effect on hover */
+}

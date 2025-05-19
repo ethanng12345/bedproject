@@ -1,0 +1,219 @@
+/* ------------------------------
+   Global Body Styles
+   - Sets a dark background, white text, and retro font for the entire page.
+------------------------------ */
+body {
+    background-color: #101010; /* Dark background for retro vibe */
+    color: #fff; /* White text for contrast */
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* ------------------------------
+   Navbar Styles
+   - Adds top padding, a dark background, and a neon green bottom border to the navbar.
+------------------------------ */
+.navbar {
+  padding-top: 25px;
+  background-color: #222; /* Dark navbar */
+  border-bottom: 4px solid #00ff99; /* Neon green underline */
+}
+
+/* ------------------------------
+   Heading Styles (h2, h3)
+   - Applies a subtle black text shadow for a glowing effect.
+   - Sets the text color to neon green.
+------------------------------ */
+h2, h3 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Glowing text */
+    color: #00ff99;
+}
+
+/* ------------------------------
+   Side Bar Styles
+   - Styles the sidebar with a dark background, white text, padding, rounded corners, 
+     and a neon green border.
+------------------------------ */
+.side-bar {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #00ff99; /* Neon green border */
+}
+
+/* ------------------------------
+   Side Bar Link Styles
+   - Ensures sidebar links are white, without underlines, and have block display with padding.
+------------------------------ */
+.side-bar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+/* ------------------------------
+   Side Bar Link Hover Effect
+   - Changes the background and border colors on hover with a glowing box shadow.
+------------------------------ */
+.side-bar a:hover {
+    background-color: #00cc77;
+    border-color: #00ff99;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* ------------------------------
+   Main Content Styles
+   - Styles the main content area with a dark background, white text, rounded corners, 
+     centered text, and a neon glow effect.
+------------------------------ */
+.main-content {
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+}
+
+/* ------------------------------
+   Play Now Button Styles
+   - Styles the primary action button with a red background, no border, padding, 
+     large font size, rounded shape, pointer cursor, transition effect, and a glowing shadow.
+------------------------------ */
+.play-now-btn {
+    background: #ff0044;
+    border: none;
+    padding: 20px 40px;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
+
+/* ------------------------------
+   Play Now Button Hover Effect
+   - Scales the button, changes the background to a gradient, and intensifies the glowing shadow.
+------------------------------ */
+.play-now-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8); /* Glowing effect */
+}
+
+/* ------------------------------
+   Boxer Card Styles
+   - Styles boxer cards with a dark background, neon green border, padding, and margin.
+   - Adds a pointer cursor and transition effects for background and border.
+------------------------------ */
+.boxer-card {
+    background-color: #222;
+    border: 2px solid #00ff99; /* Neon green border */
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+/* ------------------------------
+   Boxer Card Hover Effect
+   - Changes the background and border colors when hovering over a boxer card.
+------------------------------ */
+.boxer-card:hover {
+    background-color: #00ff99;
+    border-color: #00cc77;
+}
+
+/* ------------------------------
+   Selected Boxer Card Styles
+   - Applies a distinct style to the selected boxer card.
+------------------------------ */
+.selected {
+    background-color: #00cc77;
+    border-color: #00ff99;
+}
+
+/* ------------------------------
+   Boxer Image Styles
+   - Ensures boxer images take full width, have a border, glowing shadow, and margin below.
+------------------------------ */
+.boxer-image {
+    width: 100%;
+    border: 5px solid #333;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+/* ------------------------------
+   Boxer Stats List Item Styles
+   - Sets the font size for items in the boxer stats list.
+------------------------------ */
+.boxer-stats li {
+    font-size: 1.2rem;
+}
+
+/* ------------------------------
+   Danger Button Styles
+   - Styles buttons with a red background, no border, padding, large font size, 
+     uppercase text, glowing shadow, and transition effects.
+------------------------------ */
+.btn-danger {
+    background-color: #ff0044;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(255, 0, 68, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+/* ------------------------------
+   Danger Button Hover Effect
+   - Darkens the button on hover.
+------------------------------ */
+.btn-danger:hover {
+    background-color: #ff2a5b;
+}
+
+/* ------------------------------
+   Stats Wrapper Styles
+   - Styles the container for statistics with a dark background, rounded corners, padding,
+     and a neon glow box shadow.
+------------------------------ */
+.stats-wrapper {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* ------------------------------
+   Navbar Toggler Icon Styles
+   - Sets the navbar toggler icon to have a neon green background.
+------------------------------ */
+.navbar-toggler-icon {
+    background-color: #00ff99; /* Neon green toggle icon */
+}
+
+/* ------------------------------
+   Row Layout Styles
+   - Uses flexbox to arrange child elements with space between them.
+------------------------------ */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------------
+   Column Styles for Medium Devices
+   - Sets flexible columns with padding.
+------------------------------ */
+.col-md-4, .col-md-8 {
+    flex: 1;
+    padding: 20px;
+}

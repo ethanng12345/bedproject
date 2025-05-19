@@ -1,0 +1,76 @@
+/* ------------------------------
+   Authentication Overlay Styles
+   - Covers the entire viewport with a semi-transparent background.
+   - Centers the content using flexbox.
+------------------------------ */
+#auth-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Dim background */
+  z-index: 9999; /* Ensure it is above everything */
+  color: white;
+}
+
+/* ------------------------------
+ Authentication Card Styles
+ - Styles the card within the authentication overlay.
+ - Provides a dark background, padding, and a neon box shadow.
+------------------------------ */
+.auth-card {
+  background-color: #222;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* ------------------------------
+ Authentication Card Title Styles
+ - Styles the title within the auth card with a neon green color and glowing effect.
+------------------------------ */
+.auth-card .card-title {
+  color: #00ff99; /* Neon green title */
+  text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.7);
+}
+
+/* ------------------------------
+ Authentication Card Text Styles
+ - Sets the text color within the auth card.
+------------------------------ */
+.auth-card .card-text {
+  color: #fff;
+}
+
+/* ------------------------------
+ Login Button Styles
+ - Styles the login button with a retro red color, rounded edges, and a glowing effect.
+ - Includes a transition for smooth hover effects.
+------------------------------ */
+.btn-login {
+  background-color: #ff0044; /* Retro red for the button */
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); /* Red glowing effect */
+  text-transform: uppercase;
+}
+
+/* ------------------------------
+ Login Button Hover State
+ - Scales the button and changes its background and glowing effect when hovered.
+------------------------------ */
+.btn-login:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.8); /* Strong glowing effect */
+}

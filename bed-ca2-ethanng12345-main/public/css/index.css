@@ -1,0 +1,219 @@
+/* ------------------------------
+   Global Body Styles
+   - Sets the background color, font, and text color for the entire page.
+------------------------------ */
+body {
+    background: #1e1e1e;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+}
+
+/* ------------------------------
+   Navbar Styles
+   - Defines the navbar background and bottom border.
+------------------------------ */
+.navbar {
+    background-color: #333;
+    border-bottom: 4px solid #00ff99;
+}
+
+/* ------------------------------
+   Navbar Brand Styles
+   - Styles the brand/logo text within the navbar.
+------------------------------ */
+.navbar-brand {
+    color: #00ff99;
+    font-size: 26px;
+}
+
+/* ------------------------------
+   Hero Section Styles
+   - Applies a background image with cover settings.
+   - Centers the content both vertically and horizontally.
+   - Adds text shadow for enhanced readability.
+------------------------------ */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* ------------------------------
+   Hero Heading Styles
+   - Styles the primary heading within the hero section.
+------------------------------ */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------
+   Section Header Styles
+   - Centers and styles headers for various sections.
+   - Uses neon color and text shadow for a retro look.
+------------------------------ */
+.section-header {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #00ff99;
+    text-shadow: 1px 1px 4px #000;
+}
+
+/* ------------------------------
+   Inventory Card Styles
+   - Styles individual inventory cards with margin, border, and box shadow.
+   - Adds transition effects for hover state.
+------------------------------ */
+.inventory-card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.2s ease;
+    cursor: pointer;
+    background-color: #222;
+    border: 3px solid #00ff99;
+}
+
+/* ------------------------------
+   Inventory Card Hover Effect
+   - Enlarges the card slightly and changes background color on hover.
+------------------------------ */
+.inventory-card:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+
+/* ------------------------------
+   Inventory Card Image Styles
+   - Styles images within the inventory card.
+   - Sets dimensions, border radius, and border at the bottom.
+------------------------------ */
+.inventory-card img {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 3px solid #00ff99;
+}
+
+/* ------------------------------
+   Inventory Card Body Styles
+   - Applies padding and centers the text within the card body.
+------------------------------ */
+.inventory-card .card-body {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ------------------------------
+   Card Title Styles
+   - Styles the title text within cards with a neon effect.
+------------------------------ */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff99;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* ------------------------------
+   Card Text Styles
+   - Styles the descriptive text within cards.
+------------------------------ */
+.card-text {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* ------------------------------
+   Main Button Styles
+   - Styles the main action button with color, padding, and text transformations.
+------------------------------ */
+.btn-main {
+    background-color: #ff0044;
+    color: white;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ------------------------------
+   Main Button Hover Effect
+   - Maintains the background color on hover for the main button.
+------------------------------ */
+.btn-main:hover {
+    background-color: #ff0044;
+}
+
+/* ------------------------------
+   Row Layout Styles
+   - Uses flexbox to wrap and center content within rows.
+------------------------------ */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ------------------------------
+   Carousel Item Styles
+   - Sets the height and background properties for carousel items.
+------------------------------ */
+.carousel-inner .carousel-item {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ------------------------------
+   Carousel Image Styles
+   - Ensures carousel images cover the entire area.
+------------------------------ */
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* ------------------------------
+   Review Section Styles
+   - Styles review cards with padding, border, and flexbox alignment.
+------------------------------ */
+.review-card {
+    background-color: #222;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 2px solid #00ff99;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* ------------------------------
+   Review Text Styles
+   - Applies italic styling to the review text.
+------------------------------ */
+.review-card .review-text {
+    font-style: italic;
+}
+
+/* ------------------------------
+   Reviewer Info Styles
+   - Makes the reviewer information bold.
+------------------------------ */
+.review-card .reviewer-info {
+    font-weight: bold;
+}

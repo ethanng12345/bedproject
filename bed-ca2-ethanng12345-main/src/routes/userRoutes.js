@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const controller = require('../controllers/userController');
+const jwtMiddleware = require('../middlewares/jwtMiddleware');
+router.get('/', controller.readAllUser);
+router.get('/indiv', jwtMiddleware.verifyToken,controller.readUserByid);
+router.post('/', controller.readUsername,controller.createNewUser);
+router.put('/', controller.readUsername,controller.updateUserById);
+router.get('/:userId', controller.readUserByid2);
+module.exports = router; 

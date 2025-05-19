@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- This is the main HTML document for the Glove Royale website -->
+<html lang="en">
+
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glove Royale</title>
+
+  <!-- Google Fonts for Retro Style -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/nav.css">
+
+</head>
+
+<body>
+  <!-- =================================================== -->
+  <!--                   Navbar Section                  -->
+  <!-- =================================================== -->
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container" id="nav-container">
+      
+      <!-- Navbar Toggler Button (Now Aligned to the Far Left) -->
+      <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="logoutButton" href="#" class="nav-link">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a id="loginButton" href="/login.html" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item">
+            <a id="registerButton" class="btn register-btn" href="/register.html">Register!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- =================================================== -->
+  <!--                  Hero Carousel Section            -->
+  <!-- =================================================== -->
+  
+  <!-- Hero Section -->
+  <div id="heroCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+    <!-- Overlay content for the carousel -->
+    <div class="d-flex align-items-center justify-content-center" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;">
+      <div>
+        <h1 class="text-white">Welcome to Glove Royale</h1>
+        <p class="text-white">Build, train, and compete to become the ultimate champion!</p>
+        <a href="#features" class="btn btn-main btn-lg">Learn More</a>
+      </div>
+    </div>
+    <!-- Carousel images -->
+    <div class="carousel-inner">
+      <div class="carousel-item active bg-image" style="background-image: url('https://ethanng12345.github.io/image/homepage.webp'); filter: brightness(30%);"></div>
+      <div class="carousel-item bg-image" style="background-image: url('/images/another-image.jpg');"></div>
+      <div class="carousel-item bg-image" style="background-image: url('/images/yet-another-image.jpg');"></div>
+    </div>
+  </div>
+
+  <!-- =================================================== -->
+  <!--                Features Section                   -->
+  <!-- =================================================== -->
+  
+  <!-- Features Section -->
+  <section id="features" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-header mb-4">Game Features</h2>
+      <div class="row">
+        <!-- Feature: Boxer Profiles -->
+        <div class="col-md-4">
+          <div class="inventory-card">
+            <img src="https://ethanng12345.github.io/image/locker.webp" class="card-img-top" alt="Boxer">
+            <div class="card-body">
+              <h5 class="card-title">Boxer Profiles</h5>
+              <p class="card-text">Customize and manage your boxers to climb the ranks.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature: Leaderboard -->
+        <div class="col-md-4">
+          <div class="inventory-card">
+            <img src="https://ethanng12345.github.io/image/leaderboard.webp" class="card-img-top" alt="Leaderboard">
+            <div class="card-body">
+              <h5 class="card-title">Leaderboard</h5>
+              <p class="card-text">Compete globally and showcase your boxing dominance.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature: Epic Matches -->
+        <div class="col-md-4">
+          <div class="inventory-card">
+            <img src="https://ethanng12345.github.io/image/mainpage.webp" class="card-img-top" alt="Match">
+            <div class="card-body">
+              <h5 class="card-title">Epic Matches</h5>
+              <p class="card-text">Challenge other players and experience intense gameplay.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================== -->
+  <!--                Reviews Section                    -->
+  <!-- =================================================== -->
+  
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-5">
+    <div class="container">
+      <h2 class="section-header mb-4">What Players Are Saying</h2>
+      <!-- Review 1 -->
+      <div class="review-card">
+        <div class="review-text">"So fun! Love it!"</div>
+        <div class="reviewer-info">John, Level: 35</div>
+      </div>
+      <!-- Review 2 -->
+      <div class="review-card">
+        <div class="review-text">"Omg, so fun!"</div>
+        <div class="reviewer-info">Mary, Level: 10</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================== -->
+  <!--         Play Now Call-to-Action Section           -->
+  <!-- =================================================== -->
+  
+  <!-- Play Now Call-to-Action -->
+  <section id="play-now" class="text-center py-5  pt-5">
+    <div class="container"  ">
+      <h2 class="mb-4">Ready to Play?</h2>
+      <p class="lead">Join millions of players and compete to be the ultimate boxing champion. Your gloves are waiting!</p>
+      <a href="/register.html" class="btn btn-main btn-lg">Join Now</a>
+    </div>
+  </section>
+
+  <!-- =================================================== -->
+  <!--                   Script Files                    -->
+  <!-- =================================================== -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/queryCmds.js" type="text/javascript"></script> 
+  <script src="js/getCurrentURL.js" type="text/javascript"></script> 
+  <script src="js/userNavbarToggle.js" type="text/javascript"></script>
+</body>
+
+</html>

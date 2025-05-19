@@ -1,0 +1,120 @@
+/* ------------------------------
+   Global Body Styles
+   - Sets the background color, text color, font, and padding for the body.
+------------------------------ */
+body {
+    background-color: #101010;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    padding: 30px;
+}
+
+/* ------------------------------
+   h3 Heading Styles
+   - Applies a text shadow to h3 elements for a glowing effect.
+------------------------------ */
+h3 {
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.7);
+}
+
+/* ------------------------------
+   Form Control Styles
+   - Styles form controls with a dark background, solid border, white text, and increased font size.
+------------------------------ */
+.form-control {
+    background-color: #222;
+    border: 2px solid #555;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* ------------------------------
+   Form Control Focus State
+   - Changes the border color and adds a glowing box shadow when a form control is focused.
+------------------------------ */
+.form-control:focus {
+    border-color: #00cc77;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* ------------------------------
+   Primary Button Styles
+   - Styles primary buttons with a red background, no border, padding, uppercase text, and a glowing box shadow.
+------------------------------ */
+.btn-primary {
+    background-color: #ff0044;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(255, 0, 68, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+/* ------------------------------
+   Primary Button Hover State
+   - Darkens the primary button background when hovered.
+------------------------------ */
+.btn-primary:hover {
+    background-color: #ff2a5b;
+}
+
+/* ------------------------------
+   Card Component Styles
+   - Styles card elements with a dark background, solid border, padding, and a box shadow.
+------------------------------ */
+.card {
+    background-color: #222;
+    border: 2px solid #555;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+/* ------------------------------
+   Card Body Styles
+   - Adds padding inside the card body.
+------------------------------ */
+.card-body {
+    padding: 2rem;
+}
+
+/* ------------------------------
+   Card Title Styles
+   - Styles the card title with increased font size, neon green color, and a glowing text shadow.
+------------------------------ */
+.card-title {
+    font-size: 2rem;
+    color: #00ff99;
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.8);
+}
+
+/* ------------------------------
+   Card Text Styles
+   - Sets the font size and text color for card content.
+------------------------------ */
+.card-text {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* ------------------------------
+   Danger Button Styles
+   - Styles danger buttons similarly to primary buttons, with a red background, no border, padding, uppercase text, and a glowing box shadow.
+------------------------------ */
+.btn-danger {
+    background-color: #ff0044;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(255, 0, 68, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+/* ------------------------------
+   Danger Button Hover State
+   - Changes the background color of danger buttons when hovered.
+------------------------------ */
+.btn-danger:hover {
+    background-color: #ff2a5b;
+}

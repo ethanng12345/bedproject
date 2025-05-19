@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- Main HTML document for the Retro Boxing Game profile page -->
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Page Title -->
+  <title>Retro Boxing Game</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts for Retro Style -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- Add this line for Bootstrap Icons -->
+  
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container" id="nav-container">
+      <!-- Navbar Toggler for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Left side of the navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <!-- Home link with a home icon -->
+            <a class="nav-link" href="profile.html">
+              <i class="bi bi-house-door-fill fs-3"></i> <!-- Larger and white home icon -->
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Right side of the navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Display user level -->
+          <li class="nav-item">
+            <div id="level" class="nav-link">Level:</div>
+          </li>
+          <!-- Display user coins -->
+          <li class="nav-item">
+            <div id="coins" class="nav-link">Coins:</div>
+          </li>
+          <!-- Display user skillpoints -->
+          <li class="nav-item">
+            <div id="skillpoint" class="nav-link">Skillpoints:</div>
+          </li>
+          <!-- Convert link -->
+          <li class="nav-item">
+            <a id="convert" href="#" class="nav-link">Convert</a>
+          </li>
+          <!-- Logout link -->
+          <li class="nav-item">
+            <a id="logoutButton" href="#" class="nav-link">Logout</a>
+          </li>
+          <!-- Login link -->
+          <li class="nav-item">
+            <a id="loginButton" href="/login.html" class="nav-link">Login</a>
+          </li>
+          <!-- Register button -->
+          <li>
+            <div class="btn-nav">
+              <a id="registerButton" class="btn text-bg-dark btn-small navbar-btn" href="/register.html">Register!</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Auth Block: Visible only when the user is not logged in -->
+  <div id="auth-block" class="d-none">
+    <div class="card auth-card text-center shadow-lg" style="width: 400px;">
+      <div class="card-body">
+        <h5 class="card-title">Not Logged In</h5>
+        <p class="card-text">You must log in to access this site.</p>
+        <a href="/login.html" class="btn btn-login">Login</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Container -->
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar with Game Menu -->
+      <div class="col-md-4">
+        <div class="side-bar">
+          <h3>Game Menu</h3>
+          <a href="leaderboard.html">Leaderboard</a>
+          <a href="inventory.html">Locker</a>
+          <a href="store.html">Shop</a>
+          <a href="fc.html">Fitness Challenge</a>
+        </div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="col-md-8">
+        <div class="main-content">
+          <h2>Welcome to the Game!</h2>
+          <p>Your adventure awaits!</p>
+          <!-- Play Now button that redirects to the matches home page -->
+          <button class="play-now-btn" id="playNowBtn">Play Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript Files -->
+  <script src="js/verify.js" type="text/javascript"></script>
+  <script src="js/queryCmds.js" type="text/javascript"></script>
+  <script src="js/getCurrentURL.js" type="text/javascript"></script>
+  <script src="js/userNavbarToggle.js" type="text/javascript"></script>
+  <script src="js/getskillpoints.js" type="text/javascript"></script>
+  <!-- Inline script for the Play Now button functionality -->
+  <script>
+    document.getElementById('playNowBtn').addEventListener('click', () => {
+      window.location.href = 'matcheshome.html';
+    });
+  </script>
+</body>
+</html>

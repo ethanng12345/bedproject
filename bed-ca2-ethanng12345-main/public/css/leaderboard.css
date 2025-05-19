@@ -1,0 +1,132 @@
+/* ------------------------------
+   Global Body Styles
+   - Sets a dark background, white text, and retro font.
+------------------------------ */
+body {
+    background-color: #101010; /* Dark background for retro vibe */
+    color: #fff; /* White text for contrast */
+    font-family: 'Press Start 2P', cursive;
+ 
+}
+
+/* ------------------------------
+   Navbar Styles
+   - Applies a dark background and a neon green underline to the navbar.
+------------------------------ */
+.navbar {
+  background-color: #222; /* Dark navbar */
+  border-bottom: 4px solid #00ff99; /* Neon green underline */
+}
+
+/* ------------------------------
+   Navbar Brand Styling
+   - Styles the brand name in the navbar with a neon green color.
+------------------------------ */
+.navbar-brand {
+    color: #00ff99;
+    font-size: 24px;
+}
+
+/* ------------------------------
+   Navbar Navigation Links Styling
+   - Sets the default color for navigation links.
+------------------------------ */
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* ------------------------------
+   Navbar Navigation Links Hover State
+   - Changes the link color to neon green on hover.
+------------------------------ */
+.navbar-nav .nav-link:hover {
+    color: #00ff99;
+}
+
+/* ------------------------------
+   Container Styling
+   - Sets the maximum width of the container and adds a top margin.
+------------------------------ */
+.container {
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+/* ------------------------------
+   Leaderboard Header Styling
+   - Centers and styles the header for the leaderboard section.
+------------------------------ */
+.leaderboard-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00ff99;
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.8);
+}
+
+/* ------------------------------
+   Leaderboard Table Styling
+   - Styles the leaderboard table with width, margin, text alignment, and border.
+------------------------------ */
+.leaderboard-table {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    border: 2px solid #00ff99;
+}
+
+/* ------------------------------
+   Leaderboard Table Cell Styling
+   - Applies padding, font size, color, and border to table cells.
+------------------------------ */
+.leaderboard-table th, .leaderboard-table td {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    border: 2px solid #00ff99;
+}
+
+/* ------------------------------
+   Leaderboard Table Header Styling
+   - Sets the background and text shadow for table headers.
+------------------------------ */
+.leaderboard-table th {
+    background-color: #222;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* ------------------------------
+   Leaderboard Table Odd Rows Styling
+   - Applies a background color to odd rows in the leaderboard table.
+------------------------------ */
+.leaderboard-table tbody tr:nth-child(odd) {
+    background-color: #333;
+}
+
+/* ------------------------------
+   Leaderboard Table Even Rows Styling
+   - Applies a different background color to even rows in the leaderboard table.
+------------------------------ */
+.leaderboard-table tbody tr:nth-child(even) {
+    background-color: #444;
+}
+
+/* ------------------------------
+   Leaderboard Table Row Hover State
+   - Changes background, text color, scales the row, and adds a box shadow on hover.
+------------------------------ */
+.leaderboard-table tbody tr:hover {
+    background-color: #00ff99;
+    color: #101010;
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* ------------------------------
+   Striped Table Odd Row Text Color Override
+   - Ensures text color in striped odd rows remains white.
+------------------------------ */
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  color: white
+}

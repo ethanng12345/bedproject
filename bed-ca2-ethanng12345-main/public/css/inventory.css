@@ -1,0 +1,160 @@
+/* ------------------------------
+   Global Body Styles
+   - Sets a dark background, white text, and retro font for the page.
+------------------------------ */
+body {
+    background-color: #101010; /* Dark background for retro vibe */
+    color: #fff; /* White text for contrast */
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* ------------------------------
+   Navbar Styles
+   - Applies a dark background, neon green border, and top padding to the navbar.
+------------------------------ */
+.navbar {
+    background-color: #1f1f1f;
+    border-bottom: 3px solid #00ff99; /* Neon green border */
+    padding-top: 25px;
+}
+
+/* ------------------------------
+   Heading Styles
+   - Adds a glowing text effect to h1, h2, and h3 headings.
+------------------------------ */
+h1, h2, h3 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Glowing text */
+    color: #00ff99;
+}
+
+/* ------------------------------
+   Inventory Header Styles
+   - Centers and styles the inventory header with increased font size and bold weight.
+------------------------------ */
+.inventory-header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+
+/* ------------------------------
+   Section Header Styles
+   - Styles section headers with neon green color and text shadow for emphasis.
+------------------------------ */
+.section-header {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #00ff99;
+    text-shadow: 1px 1px 4px #000;
+}
+
+/* ------------------------------
+   Inventory Card Styles
+   - Defines the appearance of inventory cards with margins, rounded corners, and a neon border.
+   - Includes a hover effect for interactivity.
+------------------------------ */
+.inventory-card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.2s ease;
+    cursor: pointer;
+    background-color: #222;
+    border: 3px solid #00ff99; /* Neon border */
+}
+
+/* ------------------------------
+   Inventory Card Hover State
+   - Scales up the card and changes its background color when hovered.
+------------------------------ */
+.inventory-card:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+
+/* ------------------------------
+   Inventory Card Image Styles
+   - Ensures images fit nicely within the card with rounded corners and a bottom border.
+------------------------------ */
+.inventory-card img {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 3px solid #00ff99;
+}
+
+/* ------------------------------
+   Inventory Card Body Styles
+   - Adds padding and centers text inside the card body.
+------------------------------ */
+.inventory-card .card-body {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ------------------------------
+   Card Title Styles
+   - Styles the card title with neon color, bold weight, and a slight text shadow.
+------------------------------ */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff99;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* ------------------------------
+   Card Text Styles
+   - Sets the font size and color for descriptive text within cards.
+------------------------------ */
+.card-text {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* ------------------------------
+   Main Button Styles
+   - Styles the primary button with a vibrant background, rounded borders, and uppercase text.
+------------------------------ */
+.btn-main {
+    background-color: #ff6600;
+    color: white;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ------------------------------
+   Main Button Hover State
+   - Slightly darkens the button's background color when hovered.
+------------------------------ */
+.btn-main:hover {
+    background-color: #e65c00;
+}
+
+/* ------------------------------
+   Main Item Border Style
+   - Applies a solid border to main items with a matching color to the main button.
+------------------------------ */
+.main-item {
+    border: 2px solid #ff6600;
+}
+
+/* ------------------------------
+   Row Layout Styles
+   - Uses flexbox to wrap and center child elements in a row.
+------------------------------ */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

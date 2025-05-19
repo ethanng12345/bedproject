@@ -1,0 +1,216 @@
+/* ------------------------------
+   Global Body Styles
+   - Sets the background color, text color, and font for the body.
+------------------------------ */
+body {
+  background-color: #101010;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+ 
+}
+
+/* ------------------------------
+ Navbar Styles
+ - Applies a dark background and a neon green bottom border to the navbar.
+------------------------------ */
+.navbar {
+        background-color: #222;
+        border-bottom: 4px solid #00ff99;
+    }
+
+/* ------------------------------
+ Heading Styles (h2, h3)
+ - Applies a text shadow and neon green color to h2 and h3 headings.
+------------------------------ */
+h2, h3 {
+  text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.7);
+  color: #00ff99;
+}
+
+/* ------------------------------
+ Container Styles
+ - Limits the maximum width of the container.
+------------------------------ */
+.container {
+  max-width: 1200px;
+}
+
+/* ------------------------------
+ Boxer Card Styles
+ - Styles individual boxer cards with background, border, padding, margin, cursor, transition, color, and box shadow.
+------------------------------ */
+.boxer-card {
+  background-color: #222;
+  border: 2px solid #555;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* ------------------------------
+ Boxer Card Hover State
+ - Changes the background color, border color, and box shadow when hovering over a boxer card.
+------------------------------ */
+.boxer-card:hover {
+  background-color: #00cc77;
+  border-color: #00ff99;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* ------------------------------
+ Selected Boxer Card Styles
+ - Applies styles to a selected boxer card.
+------------------------------ */
+.selected {
+  background-color: #00cc77;
+  border-color: #00ff99;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* ------------------------------
+ Boxer Image Styles
+ - Sets the width, border, box shadow, and margin for boxer images.
+------------------------------ */
+.boxer-image {
+  width: 100%;
+  border: 5px solid #333;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+
+/* ------------------------------
+ Boxer Stats List Styles
+ - Styles list items within the boxer stats section with font size and neon green color.
+------------------------------ */
+.boxer-stats li {
+  font-size: 1.2rem;
+  color: #00ff99;
+}
+
+/* ------------------------------
+ Danger Button Styles
+ - Styles the danger button with a red background, no border, padding, uppercase text, and a glowing box shadow.
+------------------------------ */
+.btn-danger {
+  background-color: #ff0044;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px rgba(255, 0, 68, 0.7);
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+/* ------------------------------
+ Danger Button Hover State
+ - Darkens the danger button background and increases the box shadow on hover.
+------------------------------ */
+.btn-danger:hover {
+  background-color: #ff2a5b;
+  box-shadow: 0 0 20px rgba(255, 0, 68, 0.8);
+}
+
+/* ------------------------------
+ Row Layout Styles
+ - Uses flexbox to display rows and space items evenly.
+------------------------------ */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------------------------------
+ Column Styles
+ - Defines the flex properties and padding for medium columns.
+------------------------------ */
+.col-md-4, .col-md-8 {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ------------------------------
+ Stats Wrapper Styles
+ - Styles a container for stats with a dark background, rounded corners, padding, and box shadow.
+------------------------------ */
+.stats-wrapper {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* ------------------------------
+ Boxer List Styles
+ - Removes list styling and padding from the boxer list.
+------------------------------ */
+.boxer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* ------------------------------
+ Boxer List Item Styles
+ - Styles individual list items in the boxer list with background, padding, margin, border, transition, and cursor.
+------------------------------ */
+.boxer-list li {
+  background-color: #333;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #555;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* ------------------------------
+ Boxer List Item Hover State
+ - Changes the background and border color of list items when hovered.
+------------------------------ */
+.boxer-list li:hover {
+  background-color: #00ff99;
+  border-color: #00cc77;
+}
+
+/* ------------------------------
+ Authentication Block Styles
+ - Styles the auth block with centered text and top margin.
+------------------------------ */
+/* Auth Block Styles */
+#auth-block {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* ------------------------------
+ Authentication Card Styles
+ - Styles the authentication card with a dark background, white text, and a glowing box shadow.
+------------------------------ */
+.auth-card {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* ------------------------------
+ Auth Card Primary Button Styles
+ - Styles primary buttons within the authentication card with a green background, no border, uppercase text, and padding.
+------------------------------ */
+.auth-card .btn-primary {
+  background-color: #00cc77;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+/* ------------------------------
+ Auth Card Primary Button Hover State
+ - Changes the background color and box shadow of the auth card button on hover.
+------------------------------ */
+.auth-card .btn-primary:hover {
+  background-color: #00ff99;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}

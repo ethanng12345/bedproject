@@ -1,0 +1,237 @@
+/* ------------------------------
+   Custom Navbar Styles
+   - Sets a dark background and a neon green bottom border for the custom navbar.
+------------------------------ */
+.custom-navbar {
+    background-color: #222; /* Dark background */
+    border-bottom: 3px solid #00ff99; /* Neon green border */
+}
+
+/* ------------------------------
+   Navbar Toggler Icon
+   - Applies a neon green background to the navbar toggle icon.
+------------------------------ */
+.navbar-toggler-icon {
+    background-color: #00ff99; /* Neon green toggle icon */
+}
+
+/* ------------------------------
+   Custom Button Styling for Navbar Links
+   - Styles nav-link elements that are also buttons with dark background, neon green text and border.
+   - Converts text to uppercase.
+------------------------------ */
+.nav-link.btn {
+    background-color: #222; /* Dark background */
+    color: #00ff99; /* Neon green text */
+    border: 1px solid #00ff99; /* Neon green border */
+    text-transform: uppercase; /* Uppercase text for buttons */
+}
+
+/* ------------------------------
+   Custom Button Hover Effect for Navbar Links
+   - Changes background, text, and border colors on hover.
+------------------------------ */
+.nav-link.btn:hover {
+    background-color: #00ff99; /* Neon green hover background */
+    color: #222; /* Dark text on hover */
+    border-color: #222; /* Dark border on hover */
+}
+
+/* ------------------------------
+   Custom Navbar Links Font Size
+   - Sets the font size for specific navbar items (#level, #coins, #skillpoint).
+------------------------------ */
+#level, #coins, #skillpoint {
+    font-size: 16px;
+}
+
+/* ------------------------------
+   Custom Navbar Item Colors
+   - Applies white text to various navbar items.
+------------------------------ */
+#level, #coins, #skillpoint, #convert, #logoutButton, #loginButton {
+    color: #fff; /* White text for these items */
+}
+
+/* ------------------------------
+   Custom Register Button Styling
+   - Styles the register button with a dark background, neon green text, and rounded corners.
+------------------------------ */
+.navbar-btn {
+    background-color: #222; /* Dark background */
+    color: #00ff99; /* Neon green text */
+    border-radius: 5px;
+}
+
+/* ------------------------------
+   Custom Register Button Hover Effect
+   - Reverses the colors on hover.
+------------------------------ */
+.navbar-btn:hover {
+    background-color: #00ff99;
+    color: #222;
+}
+
+/* ------------------------------
+   Global Body Styles
+   - Sets the background color, text color, font family, and padding for the page.
+------------------------------ */
+body {
+    background-color: #101010;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* ------------------------------
+   Navigation Tabs Styles
+   - Applies a neon green border and dark background to nav-tabs.
+   - Uses the retro font.
+------------------------------ */
+.nav-tabs {
+    border: 2px solid #00ff99;
+    background-color: #222;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* ------------------------------
+   Default Navbar Link Styles
+   - Sets default color and font size for navbar links.
+------------------------------ */
+.nav-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* ------------------------------
+   Active Navbar Link Styles
+   - Styles active navbar links with a neon green background and dark text.
+------------------------------ */
+.nav-link.active {
+    background-color: #00ff99;
+    color: #222;
+}
+
+/* ------------------------------
+   Buy Button Styles
+   - Styles the buy button with a vibrant red background, white text, neon green border,
+     padding, a retro font, rounded corners, and a glowing box shadow.
+   - Adds a pointer cursor and smooth transition effects.
+------------------------------ */
+.buy-button {
+    background-color: #ff2a5b;
+    color: #fff;
+    border: 2px solid #00ff99;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff99;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* ------------------------------
+   Buy Button Hover Effect
+   - Enlarges the buy button and intensifies its glow on hover.
+------------------------------ */
+.buy-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #00ff99;
+}
+
+/* ------------------------------
+   Armor and Weapon List Item Styles
+   - Styles list items in armor and weapon lists with a dark background, neon green border,
+     padding, margin, rounded corners, and transitions.
+   - Uses the retro font.
+------------------------------ */
+.armor-list li, .weapon-list li {
+    background-color: #222;
+    border: 2px solid #00ff99;
+    padding: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* ------------------------------
+   Armor and Weapon List Item Hover Effect
+   - Changes the background and text colors, and slightly enlarges the item on hover.
+------------------------------ */
+.armor-list li:hover, .weapon-list li:hover {
+    background-color: #00ff99;
+    color: #222;
+    transform: scale(1.05);
+}
+
+/* ------------------------------
+   Armor and Weapon Preview Styles
+   - Styles preview containers with a dark background, rounded corners, padding, 
+     neon green border, and a cyan box shadow.
+------------------------------ */
+.armor-preview, .weapon-preview {
+    background-color: #222;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+    border: 5px solid #00ff99;
+}
+
+/* ------------------------------
+   Armor and Weapon Preview Image Styles
+   - Ensures images in previews have a neon green border, proper sizing, rounded corners,
+     and a glowing box shadow.
+------------------------------ */
+.armor-preview img, .weapon-preview img {
+    border: 5px solid #00ff99;
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* ------------------------------
+   Multiplier and Attack Text Styles
+   - Sets font size, weight, color, and top margin for multiplier and attack text.
+------------------------------ */
+.multiplier, .attack {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff99;
+    margin-top: 20px;
+}
+
+/* ------------------------------
+   Stats Wrapper Styles
+   - Styles the container for stats with a dark background, rounded corners, padding,
+     and a glowing box shadow.
+------------------------------ */
+.stats-wrapper {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* ------------------------------
+   Card Body Styles
+   - Styles the card body with a slightly lighter dark background, rounded corners, 
+     padding, and a glowing box shadow.
+------------------------------ */
+.card-body {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* ------------------------------
+   Card Title Styles
+   - Sets the card title color to neon green with a glowing text shadow effect.
+------------------------------ */
+.card-title {
+    color: #00ff99;
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.7);
+}

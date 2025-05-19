@@ -1,0 +1,220 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #101010;
+    color: #fff;
+}
+
+/* ------------------------------
+   Headings Styling (h2, h3, h5)
+------------------------------ */
+h2, h3, h5 {
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.7);
+    color: #00ff99;
+}
+
+/* ------------------------------
+   Challenge Image Placeholder
+   - Sets dimensions and background properties.
+   - Centers content using flexbox.
+   - Applies box shadow and margin for spacing.
+------------------------------ */
+.challenge-image {
+    width: 100%;
+    height: 250px;
+    background-color: #101010;
+    background-size: contain; /* Ensures the image fits without stretching */
+    background-position: center; /* Centers the image within the container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------
+   Navbar Customization
+   - Dark background with a neon green underline.
+   - Nav links include neon green text with a text shadow.
+   - Hover state changes nav link color.
+------------------------------ */
+.navbar {
+    background-color: #222; /* Dark navbar */
+    border-bottom: 4px solid #00ff99; /* Neon green underline */
+}
+
+.navbar-nav .nav-link {
+    color: #00ff99 !important;
+    text-shadow: 1px 1px 3px rgba(0, 255, 255, 0.7);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff0044 !important;
+}
+
+/* ------------------------------
+   Button Styles: Danger Button (.btn-danger)
+   - Sets background color, removes border.
+   - Applies box shadow and transition effects.
+------------------------------ */
+.btn-danger {
+    background-color: #ff0044;
+    border: none;
+  
+    box-shadow: 0 0 15px rgba(255, 0, 68, 0.7);
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #ff2a5b;
+    box-shadow: 0 0 20px rgba(255, 0, 68, 0.8);
+}
+
+/* ------------------------------
+   Button Styles: Start Button (.start-button)
+   - Uppercase text with padding and rounded corners.
+   - Includes box shadow and hover effects.
+------------------------------ */
+.start-button {
+    background-color: #00cc77;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+.start-button:hover {
+    background-color: #00ff99;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* ------------------------------
+   Challenge List Styling
+   - List items styled with background, padding, and transitions.
+   - Hover effect changes background and applies box shadow.
+------------------------------ */
+#challenge-list li {
+    background-color: #101010;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1px;
+    /* box-shadow: 0 2px 5px rgba(0, 255, 255, 0.5); */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#challenge-list li:hover {
+    background-color: #00cc77;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* ------------------------------
+   Reviews Section Styling
+   - Reviews container and list items with padding, rounded corners, and shadows.
+   - Hover effect for review list items.
+------------------------------ */
+.reviews {
+    background-color: #101010;
+    border-radius: 10px;
+    padding: 20px;
+    /* box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); */
+}
+
+#review-list li {
+    background-color: #101010;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#review-list li:hover {
+    background-color: #00cc77;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* ------------------------------
+   Modal Styling
+   - Modal content, header, and footer styled with dark backgrounds and rounded corners.
+   - Modal title features neon text styling.
+------------------------------ */
+.modal-content {
+    background-color: #101010;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.modal-header, .modal-footer {
+    background-color: #101010;
+    border: none;
+}
+
+.modal-title {
+    color: #00ff99;
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.7);
+}
+
+/* ------------------------------
+   Form Controls Styling
+   - Input and select elements styled with dark backgrounds, borders, and box shadows.
+   - Focus state changes border color and shadow.
+------------------------------ */
+.form-control, .form-select {
+    background-color: #444;
+    border: 1px solid #555;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #00ff99;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+}
+
+/* ------------------------------
+   Specific Layout Customization
+   - Styling for large columns and fluid containers.
+------------------------------ */
+.col-lg-4 {
+    background-color: #101010;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container-fluid {
+    background-color: #101010;
+    border-radius: 10px;
+}
+
+/* ------------------------------
+   Scrollable Reviews Section
+   - Defines a fixed height with vertical scrolling for the review list.
+------------------------------ */
+#review-list {
+    height: 600px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+/* ------------------------------
+   Primary Button Styling (.btn-primary)
+   - Sets a neon green background with transitions for hover effects.
+------------------------------ */
+.btn-primary {
+    background-color: #00ff99;;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s, text-shadow 0.3s;
+}
